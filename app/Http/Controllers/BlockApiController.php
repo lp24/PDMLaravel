@@ -13,7 +13,7 @@ class BlockApiController extends Controller
     }
     
     public function showBlock($id){
-        return Block::with('blocks')->findOrFail($id);
+        return Block::findOrFail($id);
     }
 
     public function storeBlock(Request $request){
@@ -21,7 +21,8 @@ class BlockApiController extends Controller
     }
 
     public function updateBlock(Request $request, Block $block){
-        return $block->update($request->all()) ? ['message'=>'DayUpdated']:
-                                                    ['error'=>'UnableToUpdate'];
+        dd($request->all());
+       /* return $block->update($request->all()) ? ['message'=>'BlockUpdated']:
+                                                    ['error'=>'UnableToUpdate'];*/
     }
 }
