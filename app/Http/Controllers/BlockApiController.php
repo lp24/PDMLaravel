@@ -9,11 +9,11 @@ use Illuminate\Http\Request;
 class BlockApiController extends Controller
 {
     public function getBlocks(){
-        return Block::select('id','sala', 'day_id')->get();
+        return Block::select('id','sala', 'day_id', 'nickDisciplina', 'disciplina','sumario','professor',)->get();
     }
 
     public function getDayBlocks($id){
-        return Block::select('id','sala', 'day_id')->where('day_id', $id)->orderBy('begin')->get();
+        return Block::select('id','sala', 'day_id', 'nickDisciplina', 'disciplina','sumario','professor',)->where('day_id', $id)->orderBy('begin')->get();
     }
 
     public function showBlock($id){
