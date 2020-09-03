@@ -14,13 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('days', 'DayApiController@index');
-Route::get('day/{id}', 'DayApiController@showDay');
-Route::post('day/', 'DayApiController@storeDay');
+Route::get('/days', 'DayApiController@index');
+Route::get('/day/{id}', 'DayApiController@showDay');
+Route::post('/day/', 'DayApiController@storeDay');
 
-Route::get('blocks', 'BlockApiController@index');
-Route::get('block/{id}', 'BlockApiController@showBlock');
-Route::post('block/', 'BlockApiController@storeBlock');
-Route::patch('block/{id}', 'BlockApiController@updateBlock');
+Route::get('/blocks', 'BlockApiController@getBlocks');
+Route::get('/block/{id}', 'BlockApiController@showBlock');
+Route::put('/block/{id}','BlockApiController@updateBlock');
+Route::post('/block/', 'BlockApiController@storeBlock');
+
 
 

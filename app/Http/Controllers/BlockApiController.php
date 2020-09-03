@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 
 class BlockApiController extends Controller
 {
-    public function index(){
+    public function getBlocks(){
         return Block::select('id','sala', 'day_id')->orderBy('day_id')->get();
     }
-    
+
     public function showBlock($id){
         return Block::findOrFail($id);
     }
@@ -20,9 +20,15 @@ class BlockApiController extends Controller
         return Block::create($request->all());
     }
 
-    public function updateBlock(Request $request, Block $block){
-        dd($request->all());
-       /* return $block->update($request->all()) ? ['message'=>'BlockUpdated']:
-                                                    ['error'=>'UnableToUpdate'];*/
+    public function updateBlock(Request $request, $id){
+       /* $block = Block::find($id);
+        if(!$block) {
+            return response()->json(['message' => 'Document not found'], 404);
+        }
+        $block->content = $request -> input('content');
+        $block->save();
+        return response()->json(['block'=>$block]);*/
+        return Block::find($id)->update($request->all()) ? ['message'=>'BlockUpdated']:
+                                                    ['error'=>'UnableToUpdate'];
     }
 }
