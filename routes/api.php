@@ -19,8 +19,10 @@ Route::get('/day/{id}', 'DayApiController@showDay');
 Route::post('/day/', 'DayApiController@storeDay');
 
 Route::get('/blocks', 'BlockApiController@getBlocks');
+Route::get('/blocks/{id}', 'BlockApiController@getDayBlocks');
+
 Route::get('/block/{id}', 'BlockApiController@showBlock');
-Route::put('/block/{id}','BlockApiController@updateBlock');
+Route::patch('/block/{id}','BlockApiController@updateBlock');
 Route::post('/block/', 'BlockApiController@storeBlock');
 
 

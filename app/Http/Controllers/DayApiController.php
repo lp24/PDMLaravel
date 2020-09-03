@@ -19,9 +19,4 @@ class DayApiController extends Controller
     public function storeDay(Request $request){
         return Day::create($request->all());
     }
-
-    public function updateDay(Request $request, Day $day){
-        return $company->update($request->all()) ? ['message'=>'DayUpdated']:
-                                                    ['error'=>'UnableToUpdate'];
-    }
 }
