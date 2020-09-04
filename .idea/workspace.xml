@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a554200c-b672-4c9c-bd4f-b1d274dadd0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BlockApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BlockApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/horario.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/horario.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599132503841</updated>
       <workItem from="1599132504871" duration="4988000" />
-      <workItem from="1599137779846" duration="8949000" />
+      <workItem from="1599137779846" duration="8985000" />
     </task>
     <servers />
   </component>
